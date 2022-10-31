@@ -6,6 +6,7 @@ import Test from "./routes/testing/testing.component";
 import Test2 from "./routes/testing/test2.component";
 import Test3 from "./routes/testing/test3.component";
 import SignIn from "./routes/sign-in/sign-in.component";
+import SignUp from "./routes/sign-up/sign-up.component";
 
 
 const App = () => {
@@ -46,6 +47,7 @@ const App = () => {
         <Route path = '/test2' element={<Test2 testData = {testData}/>}/>
         <Route path = '/test3' element={<Test3/>}/>
         <Route path = '/sign-in' element={<SignIn/>}/>
+        <Route path = '/sign-up' element={<SignUp/>}/>
       </Route>
 
     </Routes>
