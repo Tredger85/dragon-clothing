@@ -6,7 +6,7 @@ import Test from "./routes/testing/testing.component";
 import Test2 from "./routes/testing/test2.component";
 import Test3 from "./routes/testing/test3.component";
 import SignIn from "./routes/sign-in/sign-in.component";
-import SignUp from "./routes/sign-up/sign-up.component";
+import SignUp from "./components/sign-up/sign-up.component";
 
 
 const App = () => {

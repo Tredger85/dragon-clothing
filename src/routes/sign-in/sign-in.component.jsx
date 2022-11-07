@@ -8,7 +8,8 @@ import {
   signInWithGoogleRedirect,
 } from '../../utils/firebase/firebase.utils'
 
-import SignUp from "../sign-up/sign-up.component";
+import SignUp from "../../components/sign-up/sign-up.component";
+import Button from "../../components/button/button.component";
 
 const SignIn = () => {
   useEffect( () => {
@@ -28,8 +29,8 @@ const SignIn = () => {
   return (
     <div>
       <h1> Sign In Page</h1>
-      <button onClick={logGoogleUser}>Sign In With Google</button>
-      <button onClick={signInWithGoogleRedirect}>Sign In With Redirect</button>
+      <Button buttonType='google' onClick={logGoogleUser}>Sign In With Google</Button>
+      <Button onClick={signInWithGoogleRedirect}>Sign In With Redirect</Button>
       <SignUp/>
     </div>
   )
